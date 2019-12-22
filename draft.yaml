@@ -1,0 +1,20 @@
+models:
+  Channel:
+    title: string:400
+    description: longtext
+    author_id: integer
+    published_at: nullable timestamp
+
+  Show:
+    title: string:200
+    description: text
+    studio_id: integer
+    cover_url: string
+
+controllers:
+  Channel:
+    index:
+      query: all
+      render: channel.index with:channel.shows
+
+    

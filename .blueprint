@@ -1,0 +1,7 @@
+created:
+    - database/migrations/2019_12_22_205754_create_channels_table.php
+    - app/Channel.php
+    - database/factories/ChannelFactory.php
+    - app/Http/Controllers/ChannelController.php
+updated:
+    - routes/web.php
